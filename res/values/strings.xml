@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">ChartTest</string>
-    <string name="menu_settings">Settings</string>
+    <string name="app_name">Диаграммы</string>
+    <string name="title_pie">Круговая</string>
+    <string name="title_bar">Столбчатая</string>
+    <string name="title_table">Табличка</string>
+    <string name="menu_settings">Настройка</string>
 
+    <!-- WebView1 -->
+    <string name="webview1_title">WebView HighCharts</string>
+    <string name="webview1_description">JavaScript библиотека HighCharts (загрузка c http://chart.icfdev.ru)</string>
+    
+    <!-- AChartEngine -->
+    <string name="achartengine_title">ACharteEngine</string>
+    <string name="achartengine_description">Библиотека android AChartEngine</string>
+    
 </resources>

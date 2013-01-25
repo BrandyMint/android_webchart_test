@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#808080" >
+
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="2dp" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="7dp"
+            android:layout_marginTop="5dp"
+            android:background="@+drawable/rectangle_rounded"
+            android:minHeight="100dp"
+            android:paddingBottom="12dp"
+            android:paddingTop="12dp" >
+
+            <WebView
+                android:id="@+id/webview1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="center" />
+
+            <ProgressBar
+                android:id="@+id/progress1"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@+drawable/rectangle_rounded"
+            android:minHeight="100dp"
+            android:paddingBottom="12dp"
+            android:paddingTop="12dp" >
+
+            <WebView
+                android:id="@+id/webview2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="center" />
+
+			<ProgressBar
+			    android:id="@+id/progress2"
+			    style="?android:attr/progressBarStyleHorizontal"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:layout_centerVertical="true"
+			    android:paddingLeft="20dp"
+			    android:paddingRight="20dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="7dp"
+            android:background="@+drawable/rectangle_rounded"
+            android:minHeight="90dp"
+            android:paddingBottom="12dp"
+            android:paddingTop="12dp" >
+
+            <WebView
+                android:id="@+id/webview3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="center" />
+
+            <ProgressBar
+                android:id="@+id/progress3"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp" />
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

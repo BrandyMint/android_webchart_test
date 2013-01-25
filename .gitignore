@@ -1,0 +1,13 @@
+~
+*.swp
+
+bin
+trash
+gen
+local.properties
+
+.lint4jprefs
+lint.xml
+proguard/
+projectSet.psf
+
