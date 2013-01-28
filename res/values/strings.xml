@@ -19,4 +19,8 @@
     <string name="keepedge_title">KeepEdge charts</string>
     <string name="keepedge_description">KeepEdge charts (android, ios)</string>
     
+	<!-- TeeChart charts -->
+    <string name="teechart_title">TeeChart charts</string>
+    <string name="teechart_description">TeeChart charts (android, ios)</string>
+    
 </resources>

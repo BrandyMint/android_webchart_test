@@ -2,6 +2,7 @@ package ru.brandymint.androidchart;
 
 import ru.brandymint.androidchart.achartengine.AChartEngineActivity;
 import ru.brandymint.androidchart.keepedge.KeepEdgeActivity;
+import ru.brandymint.androidchart.teechart.TeeChartActivity;
 import ru.brandymint.androidchart.webview.WebView1Activity;
 import android.app.ListActivity;
 import android.content.Context;
@@ -78,11 +79,13 @@ public class MainActivity extends ListActivity {
 
     private static final DemoDetails[] demos = {
     	new DemoDetails(
-                R.string.webview1_title, R.string.webview1_description, WebView1Activity.class),
+        		R.string.teechart_title, R.string.teechart_description, TeeChartActivity.class),
+        new DemoDetails(
+        		R.string.keepedge_title, R.string.keepedge_description, KeepEdgeActivity.class),
         new DemoDetails(
         		R.string.achartengine_title, R.string.achartengine_description, AChartEngineActivity.class),
     	new DemoDetails(
-        		R.string.keepedge_title, R.string.keepedge_description, KeepEdgeActivity.class)
+                R.string.webview1_title, R.string.webview1_description, WebView1Activity.class)
     };
 
 

@@ -42,6 +42,11 @@
             android:label="@string/keepedge_title" >
         </activity>
         
+		<activity
+            android:name="ru.brandymint.androidchart.teechart.TeeChartActivity"
+            android:label="@string/teechart_title" >
+        </activity>
+        
     </application>
 
 </manifest>
