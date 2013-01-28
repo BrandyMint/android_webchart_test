@@ -34,7 +34,7 @@ public class AChartEnginePie extends Fragment {
 		renderer.setLegendTextSize(15);
 		renderer.setMargins(new int[] {20, 30, 15, 0});
 
-		chartView = ChartFactory.getPieChartView(inflater.getContext(), createDataset(renderer), renderer);
+		chartView = ChartFactory.getPieChartView(getActivity(), createDataset(renderer), renderer);
 
 		return chartView;
 	}

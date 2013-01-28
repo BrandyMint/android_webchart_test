@@ -15,4 +15,8 @@
     <string name="achartengine_title">ACharteEngine</string>
     <string name="achartengine_description">Библиотека android AChartEngine</string>
     
+    <!-- KeepEdge charts -->
+    <string name="keepedge_title">KeepEdge charts</string>
+    <string name="keepedge_description">KeepEdge charts (android, ios)</string>
+    
 </resources>

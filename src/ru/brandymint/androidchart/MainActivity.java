@@ -1,6 +1,7 @@
 package ru.brandymint.androidchart;
 
 import ru.brandymint.androidchart.achartengine.AChartEngineActivity;
+import ru.brandymint.androidchart.keepedge.KeepEdgeActivity;
 import ru.brandymint.androidchart.webview.WebView1Activity;
 import android.app.ListActivity;
 import android.content.Context;
@@ -79,7 +80,9 @@ public class MainActivity extends ListActivity {
     	new DemoDetails(
                 R.string.webview1_title, R.string.webview1_description, WebView1Activity.class),
         new DemoDetails(
-        		R.string.achartengine_title, R.string.achartengine_description, AChartEngineActivity.class)
+        		R.string.achartengine_title, R.string.achartengine_description, AChartEngineActivity.class),
+    	new DemoDetails(
+        		R.string.keepedge_title, R.string.keepedge_description, KeepEdgeActivity.class)
     };
 
 
