@@ -66,10 +66,7 @@ public abstract class LooksLikeMarketActivity extends FragmentActivity {
 	protected abstract Fragment createBarDiagramFragment();
 
 	protected Fragment createTableDiagramFragment() {
-		Bundle args = new Bundle();
-		Fragment fragment = new DummySectionFragment();
-		args.putInt(DummySectionFragment.ARG_SECTION_NUMBER, 4);
-		fragment.setArguments(args);
+		Fragment fragment = new TableFragment();
 		return fragment;
 	}
 
