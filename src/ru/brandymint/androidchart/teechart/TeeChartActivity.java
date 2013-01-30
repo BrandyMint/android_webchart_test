@@ -5,7 +5,7 @@ import android.support.v4.app.Fragment;
 
 
 /**
- * Пример на основе KeepAdge charts
+ * Пример на основе KeepAdge chartsу
  *
  */
 public class TeeChartActivity extends LooksLikeMarketActivity {

@@ -83,16 +83,24 @@ public class TeeChartPie extends Fragment {
 
 
 		chart.addSeries(createSeries(chart.getChart()));
+		chart.getLegend().setCustomPosition(true);
+		chart.getLegend().setTop(40);
+		chart.getLegend().setLeft(0);
 		chart.getLegend().setAlignment(LegendAlignment.BOTTOM);
-		chart.getLegend().setVisible(true);
+
 		chart.getHeader().setText("Pie Series");
 		chart.getHeader().getFont().setSize(14);
-		chart.getWalls().getBack().setVisible(false);
+		chart.getWalls().getBack().setVisible(true);
 
 		((com.steema.teechart.styles.Pie)chart.getSeries(0)).setCircled(true);
-		((com.steema.teechart.styles.Pie)chart.getSeries(0)).getMarks().setVisible(false);
+		((com.steema.teechart.styles.Pie)chart.getSeries(0)).setCustomXRadius(140);
+		((com.steema.teechart.styles.Pie)chart.getSeries(0)).getMarks().setVisible(true);
+		((com.steema.teechart.styles.Pie)chart.getSeries(0)).getMarks().setArrowLength(25);
 		((com.steema.teechart.styles.Pie)chart.getSeries(0)).setExplodeBiggest(10);
 		((com.steema.teechart.styles.Pie)chart.getSeries(0)).getPen().setVisible(false);
+		((com.steema.teechart.styles.Pie)chart.getSeries(0)).setAutoMarkPosition(true);
+
+
 
 		return chart;
 	}
@@ -123,7 +131,14 @@ public class TeeChartPie extends Fragment {
 		series.setTitle(chartData.title);
 
     	for (ChartsData.ChartItem chartItem: chartData.items) {
-    		series.add(chartItem.value, chartItem.title);
+
+    		if (chartItem.title.length()>25)
+    			{
+    			String title=chartItem.title.substring(0, 25)+"..";
+    			series.add(chartItem.value, title);
+    			}
+    		else
+    		{series.add(chartItem.value, chartItem.title);}
     	}
 
 		return series;
