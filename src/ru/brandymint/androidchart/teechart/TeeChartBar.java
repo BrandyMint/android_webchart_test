@@ -72,10 +72,13 @@ public class TeeChartBar extends Fragment {
 		chart.getHeader().setText("HorizBar Series");
 		chart.getHeader().getFont().setSize(14);
 
+
+
 		chart.removeAllSeries();
 		chart.addSeries(createSeries(chart.getChart()));
 
 		((com.steema.teechart.styles.HorizBar)chart.getSeries(0)).getMarks().setVisible(false);
+
 
 		return chart;
 	}
@@ -105,9 +108,18 @@ public class TeeChartBar extends Fragment {
 
 		series.setTitle(chartData.title);
 
+
     	for (ChartsData.ChartItem chartItem: chartData.items) {
-    		series.add(chartItem.value, chartItem.title);
-    	}
+    		if (chartItem.title.length()>25)
+
+			{
+    			String title=chartItem.title.substring(0, 25)+"..";
+    			series.add(chartItem.value, title);
+			}
+		else
+		{series.add(chartItem.value, chartItem.title);}
+	}
+
 
 		return series;
 	}
